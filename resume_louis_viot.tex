@@ -1,0 +1,139 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}                   
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{geometry}
+\usepackage{mathpazo}
+\hypersetup{
+	pdfauthor = {Louis Viot},
+  	pdfkeywords = {applied mathematics, computer science},
+	pdftitle = {Louis Viot: Curriculum Vitae},
+  	pdfsubject = {Curriculum Vitae},
+	 colorlinks=true,
+	allcolors=green!50!black,     
+	urlcolor=red!50!black           
+}
+\geometry{
+	left=2.cm,
+	right=2.cm,
+	top=2.7cm
+}
+\renewenvironment{itemize}{
+  \begin{list}{}{
+      \setlength{\leftmargin}{1.5em}
+      \setlength{\itemsep}{0.25em}
+      \setlength{\parskip}{0pt}
+      \setlength{\parsep}{0.25em}
+    }
+}{
+  \end{list}
+}
+\setlength\parindent{0em}
+\renewcommand{\today}{\ifcase \month \or January\or February\or March\or April\or May \or June\or July\or August\or September\or October\or November\or December\fi \space \the\year}
+
+\begin{document}
+{\huge \bf Louis Viot}\\
+\bigskip
+\begin{minipage}[t]{0.5\textwidth}
+    Lilienstraße 32\\
+    20095 Hamburg
+\end{minipage}
+\begin{minipage}[t]{0.5\textwidth}
+\begin{flushright}
+	Mobile Phone: (+49)1744969382 \\
+	E-mail: \href{mailto:louis.viot@protonmail.com}{louis.viot@protonmail.com} \\
+\end{flushright}
+\end{minipage}
+
+\section*{Employment}
+	\begin{itemize}
+		\item \textbf{2021 - current : Postdoctoral Position at the Chair for High Performance Computing, Helmut-Schmidt-Universität, Hamburg}
+			\begin{itemize}
+				\item Development and implementations of efficient algorithms for molecular-continuum multiscale flow simulations within the C++ highly parallel macro-micro coupling tool MaMiCo
+			\end{itemize}
+		\item \textbf{2018 - 2021 : Research Engineer, Severe Accident Modeling Laboratory, CEA Cadarache}
+			\begin{itemize}
+				\item Modeling of coupled multi-scale and multi-physic models involved in severe accidents such as thermalhydraulic, thermal heat transfer or thermochemistry and development of an object oriented coupling software with coupling numerical schemes and a modular coupling architecture
+			\end{itemize}
+		\item \textbf{2015 - 2018 : PhD Thesis, ENS Cachan, CEA Cadarache}
+			\begin{itemize}
+				\item \textbf{PhD Title :} ``Modeling and simulation of complex systems for nuclear severe accidents''
+				\item \textbf{Supervisor :} Florian De Vuyst, LMAC, UTC, Sorbonne Universités, 60200 Compiègne (previously CMLA, ENS Cachan)
+				\item \textbf{Supervisor :} Laurent Saas, DTN/SMTA/LMAG, CEA Cadarache
+				\item \textbf{Brief Synopsis of Research :} the simulation of severe accidents in nuclear reactors leads to coupled problems of multiphysics and multiscale models. These models can be of different types going from refined models, e.g. mesh based models, to coarse-grained models, e.g. stationary or lumped parameter models. Furthermore, they often have internal states with transitions potentially associated with discontinuities. Altogether, the simulation of severe accidents requires to solve complex systems composed of a wide variety of interacting models. During the thesis, coupling schemes and synchronization techniques have been studied and designed to accuratly solve these systems. A new software architecture has been integrated in the already existing CEA's platform named \texttt{procor} and numerical analysis and calculations have been performed on representative and real industrial test cases
+			\end{itemize}
+	\item \textbf{2015 : Six months research internship, CEA Cadarache}
+		\begin{itemize}
+			\item \textbf{Brief Synopsis of Research :} Implementation of a predictor/corrector numerical scheme in a code (\textit{Java}) for nuclear reactor severe accidents
+		\end{itemize}
+	\item \textbf{2014 : Two months research internship, Polytechnic Institute, Bragança, Portugal}
+		\begin{itemize}
+			\item \textbf{Brief Synopsis of Research :} Teeth extraction from dental x-ray using contour detection, image segmentation, texture pattern recognition and Chan-Vese active contour methods
+		\end{itemize}
+\end{itemize}  
+
+\section*{Skills}
+\begin{itemize}
+	\item \textbf{Programming :} C++, Java, C, Python, Fortran, OCamL, Qt, Haskell, ADA, \LaTeX
+	\item \textbf{Software :} Slurm, Spack, Docker, Singularity, Eclipse, Netbeans, Cmake, Git, Svn, MatLab
+	\item \textbf{Operating systems :} UNIX (Linux), Windows and Mac OS
+	\item \textbf{Applied mathematics :} Numerical analysis, Optimization, Topology, Linear algebra, Differential equation, Measure and distribution
+	\item \textbf{Computer science :} Object-oriented, Imperative and functional programming, Software architecture, Computer architecture, Parallel algorithms, Critical software, Distributed system, Grid computing, Distributed computing, Cloud computing.
+	\item \textbf{Spoken Languages :} French (mother tongue), English (C1), German (A1)
+\end{itemize}  
+
+\section*{Education}
+\begin{itemize}
+  	\item \textbf{2015 - 2018 : PhD in Computer Science and Applied Mathematics, ENS Cachan, CEA Cadarache}
+	\item \textbf{2014 - 2015 : MSc in Distributed Systems and Critical Software, Toulouse}
+    	\item \textbf{2012 - 2015 : INP ENSEEIHT, a top ranking French engineering school, Toulouse}
+		\begin{itemize}
+			\item Institute of Engineering in Electrical Engineering, Automation, Electronics, Computer Science, Applied Mathematics, Hydraulics, Telecommunications
+			\item Engineering Degree in Applied Mathematics and Computer Science
+		\end{itemize}
+	\item \textbf{2010 - 2012 : Classes préparatoires (MPSI, MP*), Lycée Clemenceau, Reims}
+		\begin{itemize}
+			\item Two years of intense preparation for selective entrance to engineering schools
+			\item Courses included : Mathematics and Physics
+		\end{itemize}
+	\item \textbf{2007 - 2010 : Baccalaureat S, Lycée François Bazin, Charleville-Mézières}
+		\begin{itemize}
+			\item Passed with distinction, equivalent to A levels in science
+		\end{itemize}
+\end{itemize}
+
+\section*{Publications and Conference Papers}
+\begin{itemize}
+	\item \textbf{``Fault Tolerant Molecular-Continuum Flow Simulation''} in High Performance Computing in Science and Engineering, 2024
+	\item \textbf{``From Desktop to Supercomputer: Computational Fluid Dynamics Augmented by Molecular Dynamics using MaMiCo and preCICE''} in Proc.~of the Interactive and Urgent ISC workshop, 2023
+	\item \textbf{``Multi-dimensional Simulation of Phase Change by a 0D-2D Model Coupling via Stefan Condition''} in Communications on Applied Mathematics and Computation, 2021
+	\item \textbf{``Modeling of the corium crust of a stratified corium pool during severe accidents in light water reactors''} in Nuclear Engineering and Design, 2020
+	\item \textbf{``Main outcomes from the IVR code benchmark performed in the IVMR project''} in Proc.~of the 9th European Review Meeting on Severe Accident Research (ERMSAR2019),
+Prague, Czech Republic, 2019
+	\item \textbf{``Solving coupled problems of lumped parameter models in a platform for severe accidents in nuclear reactors''} in International Journal for Multiscale Computational Engineering, 2018
+	\item \textbf{``Hybrid lumped/distributed parameter model for treating the vessel lower head ablation by corium during a LWR severe accident''}, in Proc.~of the 27th International Conference Nuclear Energy for New Europe (NENE2018), Portorož, Slovenia, 2018.
+	\item \textbf{``Modeling and simulation of complex systems for nuclear severe accidents''}, PhD thesis, 2018
+\end{itemize}  
+
+\section*{Conferences and Seminars}
+\begin{itemize}
+	\item \textbf{``From Desktop to Supercomputer: Computational Fluid Dynamics Augmented by Molecular Dynamics using MaMiCo and preCICE''}, Interactive and Urgent ISC workshop, 2023, \textit{(Oral presentation)}
+	\item \textbf{``MaMiCo-preCICE coupling for hybrid molecular-continuum flow simulations''}, The 8th European Congress on Computational Methods in Applied Sciences and Engineering, ECCOMAS Congress, 2022, 5-9 June 2022, Oslo, Norway, \textit{(Oral presentation)}
+	\item \textbf{``Hybrid lumped/distributed parameter model for treating the vessel lower head ablation by corium during a LWR severe accident''}, 27th International Conference Nuclear Energy for New Europe (NENE2018), 2018, Portorož, Slovenia, \textit{(Oral presentation)}
+	\item \textbf{``Solving coupled problems of lumped parameter models in a platform for severe accidents in nuclear reactors''}, 2018, European Conference on Computational Mechanics, Glasgow, UK, \textit{(Oral presentation)}
+	\item \textbf{``Solving coupled problems of lumped parameter models in a platform for severe accidents in nuclear reactors''}, CEMRACS Summer school (organized by SMAI), 2017, CIRM, Marseille, \textit{(Poster presentation)}
+\end{itemize}  
+
+\section*{Summer schools}
+\begin{itemize}
+	\item \textbf{Numerical simulation thematic school (ETSN) :} ``Validation of numerical simulation and quality of computation codes'' organized by CEA/DIF with LRC MESO (CMLA - ENS Cachan), 2018, Cargèse
+	\item \textbf{CEMRACS :} ``Numerical methods for stochastic models: control, uncertainty quantification, mean-field'', 2017, CIRM, Marseille
+	\item \textbf{Numerical simulation thematic school (ETSN) :} ``Methods for interface tracking'' organized by CEA/DIF with LRC MESO (CMLA - ENS Cachan), 2017, Cadarache
+	\item \textbf{Numerical simulation thematic school (ETSN) :} ``Complex flows, advanced schemes, singularity treatments and high performance computations in hydrodynamic'', organized by CEA/DIF with LRC MESO (CMLA - ENS Cachan), 2016, Cadarache
+\end{itemize}
+
+\end{document}
+ 
+
